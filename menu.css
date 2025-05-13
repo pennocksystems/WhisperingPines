@@ -1,0 +1,99 @@
+body {
+    font-family: 'Marcellus', serif;
+    background: #f5f2eb;
+    margin: 0;
+    padding: 0;
+    color: #2f3e2e;
+  }
+  
+/* Header container to hold the video and content */
+.header-container {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Adjust as needed */
+    overflow: hidden;
+  }
+
+  /* The video background */
+.header-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video covers the entire header area */
+    z-index: -1; /* Makes sure the video is behind the header content */
+  }
+
+  .header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* Ensures text is readable over the video */
+    text-align: center;
+    z-index: 1; /* Keeps content above the video */
+  }
+  
+/* Logo */
+.logo {
+    width: 120px; /* Adjust logo size */
+    height: auto;
+    margin-bottom: 10px; /* Adjust spacing below the logo */
+  }
+  
+/* Title and subtitle styling */
+h1 {
+    font-size: 2.5rem;
+    margin: 0;
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+    margin-top: 5px;
+  }
+  
+  .course-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 30px;
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .hole-card {
+    background: #ffffff;
+    border-left: 5px solid #355E3B;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+  }
+  
+  .hole-card:hover {
+    transform: translateY(-3px);
+  }
+  
+  .hole-card h2 {
+    margin: 0 0 8px;
+    font-size: 20px;
+    color: #3e4e3a;
+  }
+  
+  .hole-card p {
+    margin: 5px 0;
+    line-height: 1.4;
+  }
+  
+  .desc {
+    font-style: italic;
+    color: #555;
+  }
+
+  .hole-image {
+    width: 100%; /* Makes the image span the full width of its container */
+    height: auto; /* Keeps the image’s aspect ratio intact */
+    margin-top: 10px; /* Adds space above the image */
+    border-radius: 5px; /* Optional: adds rounded corners to the image */
+  }
