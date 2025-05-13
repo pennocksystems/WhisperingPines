@@ -1,0 +1,112 @@
+body {
+    font-family: 'Marcellus', serif;
+    background: #f5f2eb;
+    margin: 0;
+    padding: 0;
+    color: #2f3e2e;
+}
+
+/* Logo container */
+.logo-container {
+    position: relative;
+    text-align: center; /* Center the logo */
+    margin-bottom: 20px; /* Space between logo and title */
+}
+
+.event-logo {
+    width: 120px; /* Adjust logo size */
+    height: auto;
+}
+
+/* Header styling */
+header {
+    position: relative; /* Needed for positioning the background video */
+    text-align: center;
+    color: white;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text contrast */
+}
+
+/* Background video */
+header video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Put video behind content */
+}
+
+/* Title and Subtitle Styling */
+h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    margin-top: 5px;
+}
+
+.calendar-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.calendar {
+    width: 90%;
+    max-width: 1200px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.calendar-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+}
+
+.day-label {
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    background: #355E3B;
+    color: white;
+}
+
+.day {
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    background: #e0f2f1;
+    transition: background-color 0.2s ease;
+}
+
+.day:hover {
+    background-color: #81c784;
+}
+
+.date {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.event {
+    font-size: 1rem;
+    color: #355E3B;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.event:hover {
+    text-decoration: underline;
+}
