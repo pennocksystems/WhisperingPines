@@ -1,7 +1,7 @@
 /* Chatbot Toggle Button */
 #chatbot-toggle {
     position: fixed;
-    bottom: 180px;
+    bottom: 200px;
     right: 20px;
     background: linear-gradient(270deg, #D8B68D, #7A5C42);
     background-size: 400% 400%;
